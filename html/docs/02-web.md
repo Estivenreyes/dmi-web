@@ -1,8 +1,7 @@
-# Internet Basics
+# ¿Qué es la web? 👩🏻‍💻
 
-## ¿Qué es la web?
 - WWW: World Wide Web.
-- Fue creada en 1992 por el científico e investigador, Tim Berners-Lee.
+- Fue creada en 1992 por el científico e investigador: Tim Berners-Lee.
 - Información que se encuentra almacenada en diferentes documentos.
 - Es accesible a través de vínculos.
 - ¡Transformó la manera de acceder a la información!
