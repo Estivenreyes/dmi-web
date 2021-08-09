@@ -1,12 +1,12 @@
-# Internet Basics 🌐
+# 🌐 Internet Basics
 
 
 ## ¿Qué es Internet?
-Internet es gigante, variado y muy viejo. Fue inventado en 1969.
+Internet es gigante, variado y muy antiguo. Fue inventado en 1969.
 
-Gracias a él, podemos acceder a los sitios web de todo el mundo, ver nuestras películas favoritas y hasta pagar mis facturas.
+Gracias a él, podemos acceder a los sitios web de todo el mundo, ver nuestras películas favoritas y hasta pagar facturas.
 
-Billones de dispositivos (computadores, celulares, neveras, cámaras de seguridad) están interconectadas.
+Billones de dispositivos (computadores, celulares, neveras, cámaras de seguridad) están interconectadas gracias a él.
 
 ¡No es lo mismo que la web!
 #### Glosario
@@ -20,3 +20,6 @@ Billones de dispositivos (computadores, celulares, neveras, cámaras de segurida
 #### Links
 - [Marksheet](https://marksheet.io/internet.html): Internet
 - [RoadMap](https://roadmap.sh/frontend): Frontend Developer
+
+#### Recursos
+- 📹: [Internet | Web Basics Youtube](https://www.youtube.com/watch?v=nK-fawfE8Ms&ab_channel=JuanJos%C3%A9Gonz%C3%A1lez)

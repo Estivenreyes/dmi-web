@@ -1,4 +1,4 @@
-# ¿Qué es la web? 👩🏻‍💻
+# 👩🏻‍💻 ¿Qué es la web?
 
 - WWW: World Wide Web.
 - Fue creada en 1992 por el científico e investigador: Tim Berners-Lee.
@@ -16,3 +16,7 @@
 - Web: Una pequeña parte del internet
 - Webpage: Es un documento HTML
 - Navegador: Programa que puede interpretar nuestros archivos (HTML, CSS y JS) 
+
+#### Recursos
+- 📹: [Internet | Web Basics Youtube](https://www.youtube.com/watch?v=nK-fawfE8Ms&ab_channel=JuanJos%C3%A9Gonz%C3%A1lez)
+- [HTML Primer acercamiento](https://github.com/jujogi/dmi-web/blob/master/html/examples/02-web.html)
