@@ -29,3 +29,7 @@
     - `<button>`: Elemento clickeable - Interacciones
     - `<input>`: Controles interactivos (text, password, email, time...)
     - `<img>`: Añadir una imagen en el document (image)
+
+#### Recursos
+- 📹: [HTML Elements](https://www.youtube.com/watch?v=hbgFGmOMWiY)
+- [HTML Semantic Elements](https://github.com/jujogi/dmi-web/blob/master/html/examples/03-html-elements.html)

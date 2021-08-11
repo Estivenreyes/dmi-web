@@ -51,4 +51,3 @@ Información extra que brinda nuestra página al navegador
 #### Recursos
 - 📹: [HTML Elements](https://www.youtube.com/watch?v=hbgFGmOMWiY)
 - [HTML Basics](https://github.com/jujogi/dmi-web/blob/master/html/examples/03-html-basics.html)
-- [HTML Semantic Elements](https://github.com/jujogi/dmi-web/blob/master/html/examples/03-html-elements.html)
