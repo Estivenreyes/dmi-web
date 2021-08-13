@@ -12,4 +12,5 @@ A medida que vayamos viendo los temas, iremos actualizando el temario.
 ## HTML: 
 - [HTML Basics](https://github.com/jujogi/dmi-web/blob/master/html/docs/03-html-basics.md)
 - [HTML Elements](https://github.com/jujogi/dmi-web/blob/master/html/docs/04-html-elements.md)
+- [HTML Form & inputs](https://github.com/jujogi/dmi-web/blob/master/html/docs/05-html-forms-elements.md)
 

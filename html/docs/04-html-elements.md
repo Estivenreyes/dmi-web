@@ -12,6 +12,7 @@
     - `<section>`: Contenido dependiente
     - `<article>`: Contenido autónomo y reutilizable
     - `<figure>`: Contenido multimedia
+    - `<figcaption>`: Texto que acompaña la imagen
     - `<aside>`: Contenido lateral
     - `<footer>`: Pie de página
 
@@ -21,13 +22,12 @@
 
 - Ocupa solo el espacio que se define en la etiqueta.
 - Se utilizan dentro de elementos en bloque.
-- Elementos: `<span> <a> <b> <button> <input> <label> <img>`
+- Elementos: `<span> <a> <b> <button> <img>`
 
     - `<span>`: Contenedor en línea. Aplicar estilos a un texto
     - `<a>`: Crea un enlace (anchor)
-    - `<b>`: Añade negrita a un texto (bold)
+    - `<b> | <strong>`: Añade negrita a un texto (bold)
     - `<button>`: Elemento clickeable - Interacciones
-    - `<input>`: Controles interactivos (text, password, email, time...)
     - `<img>`: Añadir una imagen en el document (image)
 
 #### Recursos
