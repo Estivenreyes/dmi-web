@@ -5,20 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Form & Inputs</title>
+    <style>
+
+        .form {
+            background: gray;
+            padding: 20px;
+        }
+
+        .form__input {
+            background: white;
+            width: 150px;
+            height: 50px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        .form__input--green {
+            background: green;
+        }
+
+    </style>
 </head>
 <body>
-    <form>
+    <form class="form"> <!-- Bloque -->
         <div>
-            <input type="text" placeholder="Please write your name" value="Juan Jose">
+            <input type="text" placeholder="Please write your name" value="Juan Jose" class="form__input">
         </div>
 
         <div>
-            <input type="email" placeholder="Your email">
+            <input type="email" placeholder="Your email" class="form__input form__input--green">
         </div>
 
-        <input type="password" placeholder="Enter your password">
+        <input type="password" placeholder="Enter your password" class="form__input">
 
-        <input type="radio" name="vehicle" value="Car" id="vehicle1">
+        <input type="radio" name="vehicle" value="Car" id="vehicle1" class="form__input">
         <label for="vehicle1">Car</label>
 
         <input type="radio" name="vehicle" value="Bike" id="vehicle2">
@@ -34,13 +55,28 @@
         <input type="date" value="2018-07-22">
         <input type="color">
 
-        <select name="skills" id="skilss">
-            <option value="">HTML</option>
-            <option value="">CSS</option>
-            <option value="">Javascript</option>
+        <select name="skills" class="skills">
+            <option value="" class="skills__item">HTML</option>
+            <option value="" class="skills__item skills__item--background">CSS</option>
+            <option value="" class="skills__item">Javascript</option>
         </select>
 
         <input type="submit" value="Submit form!">
+
+        <select name="skills">
+            <option disabled>What is your skill?</option>
+            <option value="html">HTML</option>
+            <option value="javascript">JS</option>
+            <option value="css">CSS</option>
+        </select>
+
+        <textarea name="" id="">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, nesciunt culpa vero magni dolore porro sit mollitia non provident, ut, quae dignissimos rerum eos explicabo doloribus sed ipsam deleniti consequatur.
+        </textarea>
+
+        <iframe src="https://www.icesi.edu.co/es/" frameborder="0"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nK-fawfE8Ms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 </form>
 
 </body>
