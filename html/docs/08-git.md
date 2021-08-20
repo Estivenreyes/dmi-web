@@ -35,4 +35,4 @@ Sistema de control de versiones
 
 #### Recursos
 
-- 📹: [Git - Github - Github Pages](https://www.youtube.com/watch?v=8zRjqwsYaqE)
+- 📹: [Git - Github - Github Pages](https://www.youtube.com/watch?v=IRmcUG40WtI)
