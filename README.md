@@ -15,4 +15,5 @@ A medida que vayamos viendo los temas, iremos actualizando el temario.
 - [HTML Form & inputs](https://github.com/jujogi/dmi-web/blob/master/html/docs/05-html-forms-elements.md)
 - [HTML Classes & ids](https://github.com/jujogi/dmi-web/blob/master/html/docs/06-html-class-id.md)
 - [HTML BEM](https://github.com/jujogi/dmi-web/blob/master/html/docs/07-html-bem.md)
+- [Git, Github & Github pages](https://github.com/jujogi/dmi-web/blob/master/html/docs/08-git.md)
 
