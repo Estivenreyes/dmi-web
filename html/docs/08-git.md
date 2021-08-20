@@ -32,3 +32,7 @@ Sistema de control de versiones
         - Contacto (Menú, Formulario de contacto, footer)
 - Utilizar metodología BEM y clases semánticas (header, section, footer, etc...)
 - Subir el proyecto al repositorio y a GitHub Pages
+
+#### Recursos
+
+- 📹: [Git - Github - Github Pages](https://www.youtube.com/watch?v=8zRjqwsYaqE)
