@@ -17,3 +17,5 @@ A medida que vayamos viendo los temas, iremos actualizando el temario.
 - [HTML BEM](https://github.com/jujogi/dmi-web/blob/master/html/docs/07-html-bem.md)
 - [Git, Github & Github pages](https://github.com/jujogi/dmi-web/blob/master/html/docs/08-git.md)
 
+## CSS:
+- [Intro](https://github.com/jujogi/dmi-web/blob/master/css/docs/01-intro.md)

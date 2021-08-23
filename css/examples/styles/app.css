@@ -1,0 +1,30 @@
+.paragraph {
+    color: green;
+}
+
+.welcome {
+    background: red;
+    padding: 20px;
+}
+
+.welcome__subtitle {
+    color: #FFF;
+}
+
+.welcome__paragraph {
+    color: yellow;
+    font-size: 20px;
+}
+
+#date {
+    background: blue;
+    color: #FFF;
+}
+
+.product {
+    background: blue;
+}
+
+.product--best-seller {
+    background: yellow;
+}
