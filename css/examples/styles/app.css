@@ -1,5 +1,26 @@
+body {
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/double-bubble-outline.png");
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    font-size: 2em;
+}
+
+.title {
+    font-weight: 700;
+}
+
 .paragraph {
-    color: green;
+    font-size: 2em;
+    border: 20px dashed red;
+    margin: 20px;
+    width: 90%;
+    height: 150px;
+    background-image: url("../images/oriental-tiles.png");
+    color: #FFF;
+    font-weight: 100;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .welcome {
