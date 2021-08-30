@@ -20,4 +20,5 @@ A medida que vayamos viendo los temas, iremos actualizando el temario.
 ## CSS:
 - [Intro](https://github.com/jujogi/dmi-web/blob/master/css/docs/01-intro.md)
 - [Size Units | px,%,em](https://github.com/jujogi/dmi-web/blob/master/css/docs/02-size-units.md)
-- [CSS Properties 1](https://github.com/jujogi/dmi-web/blob/master/css/docs/03-css-properties.md)
+- [CSS Appareance properties](https://github.com/jujogi/dmi-web/blob/master/css/docs/03-css-properties.md)
+- [CSS Layout properties](https://github.com/jujogi/dmi-web/blob/master/css/docs/04-css-layout.md)
