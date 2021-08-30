@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 5000px;
+}
+
+.menu {
+    background: grey;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    text-align: center;
+    padding: 45px;
+}
+
+.menu li {
+    margin: 0 20px;
+    display: inline-block;
+    background: yellow;
+    padding: 5px 10px;
+    border: solid 1px red;
+}
+
+.menu li.signIn {
+    display: none;
+}
+
+.element {
+    background: red;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.element--relative {
+    background: yellow;
+    position: relative;
+}
+
+.element--absolute {
+    background: blue;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.element--fixed {
+    background: green;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.modal {
+    background: grey;
+    padding: 20px;
+}
+
+.modal__close {
+    position: absolute;
+    font-size: 20px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.parent {
+    background: rgb(127, 173, 222);
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.child {
+    background: rgb(69, 70, 181);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.divider {
+    height: 300px;
+    width: 100%;
+    background: #efefef;
+    border-bottom: solid 1px #dfdfdf;
+}
+
+/* elementos impares */
+.divider:nth-child(odd){
+    background: #FFF;
+}
