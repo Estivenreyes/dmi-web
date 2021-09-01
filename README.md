@@ -22,3 +22,4 @@ A medida que vayamos viendo los temas, iremos actualizando el temario.
 - [Size Units | px,%,em](https://github.com/jujogi/dmi-web/blob/master/css/docs/02-size-units.md)
 - [CSS Appareance properties](https://github.com/jujogi/dmi-web/blob/master/css/docs/03-css-properties.md)
 - [CSS Layout properties](https://github.com/jujogi/dmi-web/blob/master/css/docs/04-css-layout.md)
+- [CSS Flexbox](https://github.com/jujogi/dmi-web/blob/master/css/docs/05-css-flexbox.md)

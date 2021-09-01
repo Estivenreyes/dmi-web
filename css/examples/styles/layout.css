@@ -92,7 +92,26 @@ body {
     border-bottom: solid 1px #dfdfdf;
 }
 
-/* elementos impares */
-.divider:nth-child(odd){
-    background: #FFF;
+.coffee {
+    background: gray;
+    padding: 20px;
+    position: relative;
+}
+
+.decoration{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+.decoration--one {
+    background-color: green;
+    top: 0;
+    left: 20px;
+}
+
+.decoration--second {
+    background: red;
+    bottom: 20px;
+    right: 20px;
 }

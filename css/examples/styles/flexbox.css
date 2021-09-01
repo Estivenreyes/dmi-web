@@ -1,0 +1,48 @@
+body {
+    height: 1000px;
+}
+
+.flexbox {
+    background-color: rgb(70, 163, 174);
+    height: 350px;
+
+
+    display: flex;
+    flex-direction: row; /*row / row-reverse*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flexbox__item {
+    background-color: rgb(89, 210, 147);
+    width: 100px;
+    height: 100px;
+    border: solid 1px red;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(215, 215, 215);
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 10px;
+}
+
+.menu li {
+    margin: 0 10px;
+}
