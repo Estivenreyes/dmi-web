@@ -23,3 +23,5 @@ A medida que vayamos viendo los temas, iremos actualizando el temario.
 - [CSS Appareance properties](https://github.com/jujogi/dmi-web/blob/master/css/docs/03-css-properties.md)
 - [CSS Layout properties](https://github.com/jujogi/dmi-web/blob/master/css/docs/04-css-layout.md)
 - [CSS Flexbox](https://github.com/jujogi/dmi-web/blob/master/css/docs/05-css-flexbox.md)
+- [CSS Media queries](https://github.com/jujogi/dmi-web/blob/master/css/docs/07-mediaqueries.md)
+- [CSS Pseudo classes & elements](https://github.com/jujogi/dmi-web/blob/master/css/docs/06-pseudo-classes-elements.md)

@@ -1,0 +1,40 @@
+@media all and (max-width: 1230px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media all and (max-width: 820px) {
+    .container {
+        width: 100%;
+    }
+
+    .slider {
+        flex-direction: column;
+    }
+
+    .main {
+        width: 80%;
+    }
+
+    .decoration {
+        width: 80%;
+    }
+    .brand {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 568px) {
+    .menu--right {
+        display: none;
+    }
+}

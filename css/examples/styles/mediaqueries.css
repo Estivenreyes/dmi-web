@@ -1,0 +1,24 @@
+header { 
+    font-size: 3em;
+}
+
+h1 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+a {
+    font-size: 1.1em;
+}
+
+
+@media all and (max-width: 500px){
+    header {
+        font-size: 1.5em;
+        background-color: green;
+        padding: 20px;
+    }
+}

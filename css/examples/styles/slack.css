@@ -38,11 +38,29 @@ header {
 .menu__dropdown{
     background-color: #FFF;
     list-style: none;
+    position: relative;
     display: none;
+    padding: 20px 15px;
+}
+
+.menu__list {
+    position: relative;
+}
+
+/**/
+
+.menu__list::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/slack.svg');
+    position: absolute;
+
 }
 
 .menu__list:hover .menu__dropdown {
     display: block;
+    position: absolute;
 }
 
 .menu__item {
@@ -131,4 +149,3 @@ section article {
 .btn--large {
     padding: 20px;
 }
-

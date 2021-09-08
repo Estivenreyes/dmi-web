@@ -1,0 +1,49 @@
+.rect {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: all .3s;
+}
+
+.rect:hover {
+    background: green;
+}
+
+.input__focus:focus {
+    background: yellow;
+}
+
+.button__active:active {
+    background: blue;
+    font-size: 20px;
+}
+
+.menu__item:first-child {
+    background-color: black;
+    color: #FFF;
+}
+
+.menu__item:last-child {
+    background-color: orange;
+    color: red;
+}
+
+/* .element:nth-child(even) {
+    background-color: green;
+}
+
+.element:nth-child(odd) {
+    background-color: grey;
+} */
+
+.element:nth-child(3n+2) {
+    background: red;
+}
+
+.anchor__visited:visited {
+    color: green;
+}
+
+.anchor__visit:visited {
+    color: orange;
+}
