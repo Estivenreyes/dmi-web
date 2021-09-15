@@ -25,3 +25,5 @@ A medida que vayamos viendo los temas, iremos actualizando el temario.
 - [CSS Flexbox](https://github.com/jujogi/dmi-web/blob/master/css/docs/05-css-flexbox.md)
 - [CSS Media queries](https://github.com/jujogi/dmi-web/blob/master/css/docs/07-mediaqueries.md)
 - [CSS Pseudo classes & elements](https://github.com/jujogi/dmi-web/blob/master/css/docs/06-pseudo-classes-elements.md)
+- [SASS](https://marksheet.io/sass-variables.html) | [SASS Example](https://github.com/jujogi/dmi-web/blob/master/css/examples/styles/styles.scss) | [Using SASS on our Slack Page!](https://github.com/jujogi/dmi-web/blob/master/css/examples/styles/slack-sass.scss)
+- [SwiperJS](https://swiperjs.com/demos) - [Developing our slider!](https://github.com/jujogi/dmi-web/blob/master/html/examples/swiper-slider.html)
