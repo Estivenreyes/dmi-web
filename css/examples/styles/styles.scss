@@ -1,0 +1,38 @@
+$black: rgb(40, 40, 40);
+$grey: rgb(145, 145, 145);
+$font-family: 'Arial, Comic Sans';
+$size-title: 5em;
+
+@mixin modal($unitSize:20px) {
+    background-color: $grey;
+    font-size: $unitSize;
+    border-radius: $unitSize;
+    padding: $unitSize;
+    border: solid 2px $grey;
+}
+
+.title {
+    color: $black;
+    font-family: $font-family;
+    font-size: $size-title;
+    @include modal(50px);
+}
+
+.menu {
+    &__item {
+        background: rgb(193, 173, 173);
+    }
+
+    &__link {
+        color: blue;
+    }
+
+    h1 {
+        color: $black;
+        @include modal(100px);
+    }
+}
+
+.modal {
+    @include modal(80px);
+}

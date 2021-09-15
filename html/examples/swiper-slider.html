@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper JS</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <style>
+        .slider__item {
+            width: 100%;
+            height: 500px;
+            background-color: rgb(211, 105, 105);
+        }
+
+        .slider__item:nth-child(odd){
+            background: rgb(203, 203, 89);
+        }
+
+        .slider__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .swiper-slide div {
+            width: 32%;
+            background: rgb(215, 202, 202);
+            height: 100%;
+            margin: 0 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#contact">Contact us</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="swiper swipper--width">
+            <div class="slider swiper-wrapper">
+                <div class="slider__item swiper-slide">
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+
+                </div>
+                <div class="slider__item swiper-slide">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="slider__item swiper-slide">3</div>
+                <div class="slider__item swiper-slide">4</div>
+                <div class="slider__item swiper-slide">5</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <section id="contact">
+        <form action="#">
+            <input type="text"><input type="text"><input type="text">
+            <input type="submit" value="Say hello!">
+        </form>
+    </section>
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+</html>
