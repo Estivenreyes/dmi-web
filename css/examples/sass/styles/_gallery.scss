@@ -1,0 +1,14 @@
+.gallery {
+    background-color: green;
+    border-radius: 5px;
+    display: flex;
+
+    
+
+    &__item {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        margin: 0 20px;
+    }
+}

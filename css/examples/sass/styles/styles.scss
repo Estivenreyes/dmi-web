@@ -1,0 +1,60 @@
+@import '_gallery';
+
+// 1. Imports
+// 2. Variables
+// 3. Nesting (TOP)
+// 4. Mixin (TOP)
+
+$black: rgb(41, 41, 41);
+$white: rgb(211, 211, 211);
+$large: 5em;
+$small: 2em;
+$title: 5em;
+
+@mixin title($color:#1d1d1d) {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: $large;
+    color: $color;
+}
+
+.gallery__title{
+    @include title();
+}
+
+.features__title {
+    @include title($white);
+}
+
+// .gallery__title {
+//     @include title($small, rgb(28, 83, 138));
+// }
+
+// .features__title {
+//     @include title($large, rgb(187, 27, 27));
+// }
+
+// .footer__title {
+//     @include title($small, black);
+// }
+
+.features {
+    background: $black;
+    display: flex;
+
+    // & = "features"
+    &__item {
+        width: 50px;
+        height: 200px;
+        background-color: $white;
+        margin: 0 20px;
+
+        // & = "features__item" &&  "features__item--red"
+        &--red {
+            background-color: red;
+        }
+    }
+    
+    &__subtitle {
+        color: $black;
+    }
+}
