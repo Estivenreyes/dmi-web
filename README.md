@@ -27,3 +27,8 @@ A medida que vayamos viendo los temas, iremos actualizando el temario.
 - [CSS Pseudo classes & elements](https://github.com/jujogi/dmi-web/blob/master/css/docs/06-pseudo-classes-elements.md)
 - [SASS](https://marksheet.io/sass-variables.html) | [SASS Example](https://github.com/jujogi/dmi-web/blob/master/css/examples/styles/styles.scss) | [Using SASS on our Slack Page!](https://github.com/jujogi/dmi-web/blob/master/css/examples/styles/slack-sass.scss)
 - [SwiperJS](https://swiperjs.com/demos) - [Developing our slider!](https://github.com/jujogi/dmi-web/blob/master/html/examples/swiper-slider.html)
+
+## JS:
+- [What is Javascript?](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/01-what-is-js.md)
+- [How can I start?](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/02-how-to-start.md)
+- [Variables](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/03-variables.md)
