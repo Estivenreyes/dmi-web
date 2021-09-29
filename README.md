@@ -32,3 +32,5 @@ A medida que vayamos viendo los temas, iremos actualizando el temario.
 - [What is Javascript?](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/01-what-is-js.md)
 - [How can I start?](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/02-how-to-start.md)
 - [Variables](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/03-variables.md)
+- [Arrays](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/04-arrays.md)
+- [Objects](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/05-objects.md)
