@@ -1,4 +1,4 @@
-# 🤖 DOM (Document Object Model)
+# 🧩 DOM (Document Object Model)
 
 ## ¿Qué es el DOM?
 
@@ -9,7 +9,7 @@ En Javascript, la forma de acceder al `DOM` es a través de un objeto llamado do
 
 ---
 
-## API Nativa 
+## 🪄 API Nativa 
 
 ### Seleccionar elementos
 - Si queremos hacer una modificación o interacción de un elemento en nuestra página, lo primero que debemos hacer es seleccionar `el elemento HTML`. Para ello, se suele identificar el elemento a través de un `id` o una `clase`.
@@ -33,6 +33,8 @@ title.style.color = "red";
 title.style.fontSize = "20px";
 ```
 
+---
+
 ### Anadir clases
 - Podemos añadir clases que se encarguen de los estilos y no tener que añadirlos vía Javascript.
 - Con la propiedad `classList` podemos acceder a la lista de clases de un elemento.
@@ -54,6 +56,7 @@ title.classList.toggle('title--red');
 
 
 ```
+---
 ### Obtener el valor
 - Para obtener el valor de un elemento en HTML:
     - Texto: `title.textContent`
@@ -66,7 +69,14 @@ title.classList.toggle('title--red');
     - `click`: Al hacer click en botones de inicio de sesión, galerías y más.
     - `submit`: Se ejecuta en formularios
 
+---
+
 ### Añadir nuevos elementos en el DOM
+- Para modificar el contenido de un elemento, se utilizar las propiedades:
+    - `innerHTML`: Agregar HTML
+    - `innerText`: Agregar texto
+- El nuevo elemento debe añadirse a un elemento existente, utilizando el método `appendChild`.
+
 ```
 const message = document.createElement('div');
 message.innerHTML = "<h1>I'm a new HTML Object</h1>";
