@@ -34,3 +34,5 @@ A medida que vayamos viendo los temas, iremos actualizando el temario.
 - [Variables](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/03-variables.md)
 - [Arrays](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/04-arrays.md)
 - [Objects](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/05-objects.md)
+- [Conditionals](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/06-conditionals.md)
+- [Functions](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/07-functions.md)
