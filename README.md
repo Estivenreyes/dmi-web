@@ -36,3 +36,4 @@ A medida que vayamos viendo los temas, iremos actualizando el temario.
 - [Objects](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/05-objects.md)
 - [Conditionals](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/06-conditionals.md)
 - [Functions](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/07-functions.md)
+- [DOM](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/08-dom.md)
