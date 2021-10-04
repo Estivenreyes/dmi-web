@@ -4,7 +4,6 @@
 En este repositorio encontraremos toda la información vista en clase, si tienes alguna duda, siéntete libre de visitar cada uno de los documentos.
 
 A medida que vayamos viendo los temas, iremos actualizando el temario.
-
 ## Internet Basics: 
 - [Internet](https://github.com/jujogi/dmi-web/blob/master/html/docs/01-internet.md)
 - [Web](https://github.com/jujogi/dmi-web/blob/master/html/docs/02-web.md)
@@ -37,3 +36,7 @@ A medida que vayamos viendo los temas, iremos actualizando el temario.
 - [Conditionals](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/06-conditionals.md)
 - [Functions](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/07-functions.md)
 - [DOM](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/08-DOM.md)
+
+
+## Grabaciones del curso
+- [🎥 Youtube Channel: DMI WEB (20)](https://www.youtube.com/watch?v=nK-fawfE8Ms&list=PLSXu7UPb1IEft3dCZCUyYBBznoQ_wVG0F&ab_channel=JuanJos%C3%A9Gonz%C3%A1lez)
