@@ -51,3 +51,4 @@ if (user.isActive === false) {
 #### Recursos
 
 - 📹: [Web - Conditionals & Functions](https://youtu.be/jnCAAMKoO6g)
+- [Condicionales](https://github.com/jujogi/dmi-web/blob/master/javascript/examples/js/conditionals.js)

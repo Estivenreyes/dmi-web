@@ -47,6 +47,10 @@ sum(5+2);
 output: 7
 ```
 
+## Scope
+El alcance las variables
+
 #### Recursos
 
 - 📹: [Web - Conditionals & Functions](https://youtu.be/jnCAAMKoO6g)
+- [Funciones](https://github.com/jujogi/dmi-web/blob/master/javascript/examples/js/functions.js)

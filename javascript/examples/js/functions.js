@@ -33,4 +33,15 @@ console.log(alert);
 
 const alertNtwo = sendAlert(user, "Por favor registrar horas");
 
-console.log(alertNtwo);
+
+const example = 123;
+
+function scope() {
+    const example1 = 456;
+    console.log(example);
+}
+
+console.log(example1);
+scope();
+
+// console.log(alertNtwo);

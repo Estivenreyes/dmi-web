@@ -23,3 +23,4 @@ const num = 1;
 #### Recursos
 
 - 📹: [Intro Javascript](https://youtu.be/EkzWP11zQ1w)
+- [Variables](https://github.com/jujogi/dmi-web/blob/master/javascript/examples/js/app.js)

@@ -83,18 +83,9 @@ message.innerHTML = "<h1>I'm a new HTML Object</h1>";
 document.body.appendChild(message);
 
 ```
+#### Recursos
 
----
+- 📹: [Web - DOM (Document Object Model)](https://youtu.be/5Ya4KJZYxcg)
+- [DOM](https://github.com/jujogi/dmi-web/blob/master/javascript/examples/js/dom.js)
 
-## Ejercicio #2
-Desarrollaremos un formulario de contacto donde pondremos a prueba conceptos como `condicionales`, `objetos`, `manipulación e interacción del DOM`.
-- Nuestro formulario de contacto debe tener los siguientes campos:
-    - Nombre
-    - Apellidos
-    - Correo electrónico
-    - Mensaje
-    - Botón de Enviar.
-- Todos los campos son obligatorios, de lo contrario el usuario no podrá enviar el formulario. Añade un `alert` como feedback para el usuario con el mensaje `"Completa todos los campos por favor"`.
-- Los valores deben almacenarse en un `objeto` con el nombre `user`, donde cada propiedad será un valor del formulario. El objeto debe mostrarse en consola, siempre y cuando el paso anterior se cumpla.
-- Cuando todo haya salido bien, debe crearse un nuevo `elemento` en el DOM con el mensaje: `"Pronto nos pondremos en contacto contigo ${Nombre}. Gracias"`
-- Plus si se utilizan funciones para optimizar el código.
+
