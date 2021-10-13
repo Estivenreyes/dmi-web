@@ -36,7 +36,12 @@ A medida que vayamos viendo los temas, iremos actualizando el temario.
 - [Conditionals](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/06-conditionals.md)
 - [Functions](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/07-functions.md)
 - [DOM](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/08-DOM.md)
-
+- [Template strings `(``)`](https://github.com/jujogi/dmi-web/blob/master/javascript/examples/js/template-strings.js) | [Youtube](https://www.youtube.com/watch?v=t-flnBuXOeQ)
+- [Arrow functions](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions) | [Youtube](https://www.youtube.com/watch?v=t-flnBuXOeQ)
+- Modal: [HTML](https://github.com/jujogi/dmi-web/blob/master/javascript/examples/modal-alert.html) | [Javascript](https://github.com/jujogi/dmi-web/blob/master/javascript/examples/js/modal.js) | [Youtube](https://www.youtube.com/watch?v=t-flnBuXOeQ)
+- Slider
+- Array functions (push, slice, foreach, filter, every, include, some, find...)
+- HTTP requests (fetch, axios)
 
 ## Grabaciones del curso
 - [🎥 Youtube Channel: DMI WEB (20)](https://www.youtube.com/watch?v=nK-fawfE8Ms&list=PLSXu7UPb1IEft3dCZCUyYBBznoQ_wVG0F&ab_channel=JuanJos%C3%A9Gonz%C3%A1lez)
