@@ -41,7 +41,6 @@ A medida que vayamos viendo los temas, iremos actualizando el temario.
 - Modal: [HTML](https://github.com/jujogi/dmi-web/blob/master/javascript/examples/modal-alert.html) | [Javascript](https://github.com/jujogi/dmi-web/blob/master/javascript/examples/js/modal.js) | [Youtube](https://www.youtube.com/watch?v=t-flnBuXOeQ)
 - [Slider](https://github.com/jujogi/dmi-web/blob/master/javascript/examples/js/slider.js)
 - [Array functions (push, slice, foreach, filter, every, include, some, find...)](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/09-array-functions.md)
-- HTTP requests (fetch, axios)
 
 ## Grabaciones del curso
 - [🎥 Youtube Channel: DMI WEB (20)](https://www.youtube.com/watch?v=nK-fawfE8Ms&list=PLSXu7UPb1IEft3dCZCUyYBBznoQ_wVG0F&ab_channel=JuanJos%C3%A9Gonz%C3%A1lez)
