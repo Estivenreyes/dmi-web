@@ -1,4 +1,4 @@
-# ¡Bienvenidos al maravilloso mundo de la programación web! ✌️
+# ¡Programación web: DMI! ✌️
 
 
 En este repositorio encontraremos toda la información vista en clase, si tienes alguna duda, siéntete libre de visitar cada uno de los documentos.
