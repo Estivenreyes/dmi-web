@@ -42,5 +42,7 @@ A medida que vayamos viendo los temas, iremos actualizando el temario.
 - [Slider](https://github.com/jujogi/dmi-web/blob/master/javascript/examples/js/slider.js)
 - [Array functions (push, slice, foreach, filter, every, include, some, find...)](https://github.com/jujogi/dmi-web/blob/master/javascript/docs/09-array-functions.md)
 
+## Cart [Source](https://github.com/jujogi/dmi-web/tree/master/cart)
+- [Dynamic Products](https://youtu.be/1ES023PFGs0)
 ## Grabaciones del curso
 - [🎥 Youtube Channel: DMI WEB (20)](https://www.youtube.com/watch?v=nK-fawfE8Ms&list=PLSXu7UPb1IEft3dCZCUyYBBznoQ_wVG0F&ab_channel=JuanJos%C3%A9Gonz%C3%A1lez)
