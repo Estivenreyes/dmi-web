@@ -3,27 +3,27 @@ const products = [
     {   
         id: 1,
         name: "Nintendo Switch",
-        price: "1.529.900",
+        price: 1529900,
         image: "https://http2.mlstatic.com/D_NQ_NP_998318-MLA45732621474_042021-W.webp",
         isRecommended: true,
         isBestSeller: false,
         description: "Con tu consola Switch tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos.",
-        type: "consola",
+        type: "consoles",
     },
     {
         id: 2,
         name: "Fifa 22",
-        price: "239.900",
+        price: 239900,
         image: "https://http2.mlstatic.com/D_NQ_NP_810041-MLA47739386563_102021-W.webp",
         isRecommended: false,
         isBestSeller: true,
         description: "",
-        type: "game",
+        type: "games",
     }, 
     {
         id: 3,
         name: "Control Xbox Series S",
-        price: "269.900",
+        price: 269900,
         image: "https://http2.mlstatic.com/D_NQ_NP_682739-MLA47727283112_102021-W.webp",
         isBestSeller: false,
         isRecommended: true,
@@ -33,12 +33,12 @@ const products = [
     {
         id: 4,
         name: "Mario Kart",
-        price: "229.900",
+        price: 229900,
         image: "https://http2.mlstatic.com/D_NQ_NP_835108-MLA45733317338_042021-W.webp",
         isBestSeller: false,
         isRecommended: false,
         description: "",
-        type: "game",
+        type: "games",
     }
 ];
 
@@ -125,8 +125,61 @@ const productTemplate = (item) => {
 
 };
 
+
+const filterByCategorySelect = document.getElementById("categories");
+const orderBySelect = document.getElementById("orderBy");
+
+const loadProducts = () => {
+    // Recupera la categoria del select (#categories)
+    const category = filterByCategorySelect.value || "";
+    // Recupera el orden del select (#orderBy)
+    const order = orderBySelect.value || "";
+
+    // Borra los productos anteriores
+    productsSection.innerHTML = "";
+
+    // Creamos una variable donde almacenaremos nuestros productos filtrados
+    let filteredProductsByCategory;
+
+    // Si la categoria no esta vacía:
+    if (category !== "") {
+        // Buscamos en el arreglo products, los products que hagan match con el type y la categoria
+        filteredProductsByCategory = products.filter((product) => product.type === category);
+    } else {
+        // En caso de que category esté vacia, llenamos filteredProductsByCategory con todos los productos.
+        filteredProductsByCategory = products;
+    }
+
+    // Ordenamiento de menor a mayor
+    if (order === "asc") {
+        filteredProductsByCategory = filteredProductsByCategory.sort((a, b) => a.price - b.price);
+    }
+
+    // Ordenamiento de mayor a menor
+    if (order === "desc") {
+        filteredProductsByCategory = filteredProductsByCategory.sort((a, b) => b.price - a.price);
+    }
+    
+    filteredProductsByCategory.forEach(product => {
+        // Llamo la funcion productTemplate para cada product y pintarlo en el HTML.
+        productTemplate(product);
+    });
+}
+
+// Cuando el usuario quiere filtrar por una categoria
+filterByCategorySelect.addEventListener("change", e => {
+    loadProducts();
+});
+
+// Cuando el usuario quiere modificar el orden de los productos
+orderBySelect.addEventListener("change", e => {
+    loadProducts();
+});
+
+
 // Recorro cada uno de los 4 productos que tengo en mi arreglo
 products.forEach(product => {
     // Llamo la funcion productTemplate para cada product.
     productTemplate(product);
 });
+

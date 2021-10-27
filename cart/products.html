@@ -13,6 +13,26 @@
 </head>
 <body>
 
+    <div class="filters">
+        <div>
+            <label for="categories">Filtrar por:</label>
+            <select name="categories" id="categories">
+                <option value="">Todos los productos</option>
+                <option value="consoles">Consolas</option>
+                <option value="games">Video juegos</option>
+                <option value="accesories">Accesorios</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="orderBy">Ordenar por:</label>
+            <select name="orderBy" id="orderBy">
+                <option value="">Selecciona una opción</option>
+                <option value="asc">Precio: De menor a mayor</option>
+                <option value="desc">Precio: De mayor a menor</option>
+            </select>
+        </div>
+    </div>
     <div class="products" id="products">
     </div>
     <script src="./js/app.js"></script>
