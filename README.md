@@ -44,5 +44,6 @@ A medida que vayamos viendo los temas, iremos actualizando el temario.
 
 ## Cart [Source](https://github.com/jujogi/dmi-web/tree/master/cart)
 - [Dynamic Products](https://youtu.be/1ES023PFGs0)
+- [Products: filters & order](https://youtu.be/T3-tb5uXeic)
 ## Grabaciones del curso
-- [🎥 Youtube Channel: DMI WEB (20)](https://www.youtube.com/watch?v=nK-fawfE8Ms&list=PLSXu7UPb1IEft3dCZCUyYBBznoQ_wVG0F&ab_channel=JuanJos%C3%A9Gonz%C3%A1lez)
+- [🎥 Youtube Channel: DMI WEB (24)](https://www.youtube.com/watch?v=nK-fawfE8Ms&list=PLSXu7UPb1IEft3dCZCUyYBBznoQ_wVG0F&ab_channel=JuanJos%C3%A9Gonz%C3%A1lez)
