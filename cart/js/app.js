@@ -1,47 +1,3 @@
-// Elementos a mostrar en mi HTML (DOM)
-const products = [
-    {   
-        id: 1,
-        name: "Nintendo Switch",
-        price: 1529900,
-        image: "https://http2.mlstatic.com/D_NQ_NP_998318-MLA45732621474_042021-W.webp",
-        isRecommended: true,
-        isBestSeller: false,
-        description: "Con tu consola Switch tendrás entretenimiento asegurado todos los días. Su tecnología fue creada para poner nuevos retos tanto a jugadores principiantes como expertos.",
-        type: "consoles",
-    },
-    {
-        id: 2,
-        name: "Fifa 22",
-        price: 239900,
-        image: "https://http2.mlstatic.com/D_NQ_NP_810041-MLA47739386563_102021-W.webp",
-        isRecommended: false,
-        isBestSeller: true,
-        description: "",
-        type: "games",
-    }, 
-    {
-        id: 3,
-        name: "Control Xbox Series S",
-        price: 269900,
-        image: "https://http2.mlstatic.com/D_NQ_NP_682739-MLA47727283112_102021-W.webp",
-        isBestSeller: false,
-        isRecommended: true,
-        description: "",
-        type: "accesories",
-    },
-    {
-        id: 4,
-        name: "Mario Kart",
-        price: 229900,
-        image: "https://http2.mlstatic.com/D_NQ_NP_835108-MLA45733317338_042021-W.webp",
-        isBestSeller: false,
-        isRecommended: false,
-        description: "",
-        type: "games",
-    }
-];
-
 // Elementos que añadí a mi carrito
 // Ya añadí el Fifa 22
 const cart = [
@@ -63,6 +19,7 @@ const productTemplate = (item) => {
 
     // Seteamos el atributo href con una url dinámica, donde le pasamos el id del producto
     product.setAttribute("href", `./product.html?id=${item.id}`);
+    product.setAttribute("target", `_blank`);
 
     // Lógica de nuestro tag, botón de Recomendado o Más vendido
     let tagHtml;

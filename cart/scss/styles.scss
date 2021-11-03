@@ -84,3 +84,46 @@ $blue: #3483fa;
     }
 
 }
+
+.product__item {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+
+    .product__image{
+        width: 50%;
+        border: none;
+        height: 500px;
+    }
+
+    .product__description {
+        width: 50%;
+    }
+
+    .product__name {
+        font-size: 3em;
+    }
+
+    .product__mainImage {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .product__colors {
+        display: block;
+    }
+
+    #gallery {
+        div {
+            width: 200px;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+    }
+}

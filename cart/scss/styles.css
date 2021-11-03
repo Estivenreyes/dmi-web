@@ -1,0 +1,144 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filters {
+  margin: 20px 0;
+  background-color: #9191916d;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product {
+  display: block;
+  width: 32%;
+  margin: 0 5px 20px 5px;
+  min-height: 400px;
+  text-decoration: none;
+  border: solid 1px #333333;
+  border-radius: 10px;
+}
+
+.product__image {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-bottom: solid 1px #333333;
+}
+
+.product__description {
+  padding: 15px;
+}
+
+.product__tag {
+  color: #FFF;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: .9em;
+}
+
+.product__tag--best-seller {
+  background-color: #FF7733;
+}
+
+.product__tag--recommended {
+  background-color: #333333;
+}
+
+.product__price {
+  color: #333333;
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+
+.product__name {
+  color: #333333;
+  font-size: 1.1em;
+}
+
+.product__cart {
+  background-color: #3483fa;
+  color: #FFF;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product__cart:disabled {
+  background-color: gray;
+}
+
+.product__item {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__item .product__image {
+  width: 50%;
+  border: none;
+  height: 500px;
+}
+
+.product__item .product__description {
+  width: 50%;
+}
+
+.product__item .product__name {
+  font-size: 3em;
+}
+
+.product__item .product__mainImage {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.product__item .product__colors {
+  display: block;
+}
+
+.product__item #gallery div {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__item #gallery div img {
+  width: 100%;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
