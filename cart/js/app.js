@@ -1,10 +1,13 @@
 // Elementos que añadí a mi carrito
-// Ya añadí el Fifa 22
-const cart = [
-    {
-        id: 2,
-    },
-];
+
+const getMyCart = () => {
+    const cart = localStorage.getItem("cart");
+    // Si cart no es nulo, parseo la info y sino, retorno un arreglo vacío
+    return cart ? JSON.parse(cart) : [];
+};
+
+const cart = getMyCart();
+
 
 // Añadir cada producto a un elemento contenedor
 const productsSection = document.getElementById("products");
@@ -47,7 +50,7 @@ const productTemplate = (item) => {
     <img src="${item.image}" alt="${item.name}" class="product__image">
     <div class="product__description">
         ${tagHtml}
-        <h3 class="product__price">$ ${item.price}</h3>
+        <h3 class="product__price">${ formatCurrency(item.price) }</h3>
         <h2 class="product__name">${item.name}</h2>
         ${buttonHtml}
     </div>
@@ -75,6 +78,8 @@ const productTemplate = (item) => {
         };
 
         cart.push(productAdded);
+
+        localStorage.setItem("cart", JSON.stringify(cart));
         
         // Deshabilito el botón
         productCartButton.setAttribute("disabled", true);
@@ -139,4 +144,28 @@ products.forEach(product => {
     // Llamo la funcion productTemplate para cada product.
     productTemplate(product);
 });
+
+const user = {
+    name: "Juan José",
+    email: "jujogi413@gmail.com"
+}
+
+localStorage.setItem("user", JSON.stringify(user));
+
+//stringy para almacenar la info del objecto en localStorage
+// parse cuando recupero la información
+
+
+const userSaved = localStorage.getItem("user");
+const userJSON = JSON.parse(userSaved);
+
+console.log(userJSON);
+
+// if (user) {
+//     console.log(user);
+// } else {
+//     console.log("No existe!");
+// }
+
+
 

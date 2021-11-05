@@ -18,7 +18,7 @@ const customContent = document.getElementById("customContent");
 // Modificamos la info del producto
 productName.innerText = product.name;
 productDescription.innerText = product.description;
-productPrice.innerText = `$ ${product.price}`;
+productPrice.innerText = `${ formatCurrency(product.price) }`;
 productImage.setAttribute("src", product.image);
 
 // Creamos la galería
