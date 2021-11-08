@@ -31,7 +31,17 @@ const myFunction = async () => {
     console.log(result);
 };
 ``` 
+## Error handling
+Utilizamos el método `catch()`, el cual solo se ejecuta en los casos en los que la promesa se marca como `Rejected`.
+Como buena práctica, siempre se debe tener en cuenta un escenario donde las peticiones del servidor pudieran fallar.
 
+```
+try {
+    await myResources();
+} catch (e) {
+    console.log("El recurso falló");
+}
+```
 ## Promise based HTTP client: axios
 Axios es una librería de Javascript que nos facilita la comunicación con los recursos de un servidor.
 ```

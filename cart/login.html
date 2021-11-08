@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Register</title>
+    <link rel="stylesheet" href="./scss/styles.css">
+</head>
+<body>
+
+    <form id="register" class="auth">
+        <h1>¡Regístrate!</h1>
+        <input type="text" placeholder="Nombre completo" name="name">
+        <input type="email" placeholder="Correo electrónico" name="email">
+        <input type="password" placeholder="Contraseña" name="password">
+        <input type="text" placeholder="Ciudad" name="city">
+        <input type="text" placeholder="Dirección" name="address">
+
+        <input type="submit" value="Registrarme">
+    </form>
+
+
+    <form id="login" class="auth">
+        <h1>Inicia sesión</h1>
+        <input type="email" placeholder="Correo electrónico" name="email">
+        <input type="password" placeholder="Contraseña" name="password">
+        <input type="submit" value="Iniciar sesión">
+    </form>
+
+    <button id="logout">Cerrar sesión</button>
+    <button id="facebook">Iniciar sesión con Facebook</button>
+
+    <script type="module" src="./js/auth.js"></script>
+</body>
+</html>
