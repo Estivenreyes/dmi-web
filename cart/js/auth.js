@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyAFKaAuMGLffTNfvJ_fvItiIyfx-2VZCfs",
@@ -13,12 +13,9 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
-const provider = new GoogleAuthProvider();
-
 const registerForm = document.getElementById("register");
 const loginForm = document.getElementById("login");
 const logoutButton = document.getElementById("logout");
-const facebookButton = document.getElementById("facebook");
 
 
 const createUser = async (email, password) => {
@@ -53,17 +50,6 @@ const logout = async () => {
     }
 }
 
-const loginWithFacebook = async () => {
-
-    const result = await signInWithPopup(auth, provider);
-    const credential = GoogleAuthProvider.credentialFromResult(result);
-    const token = credential.accessToken;
-    // The signed-in user info.
-    const user = result.user;
-    console.log(result);
-
-}
-
 registerForm.addEventListener("submit", e => {
     e.preventDefault();
     const name = registerForm.name.value;
@@ -95,16 +81,12 @@ logoutButton.addEventListener("click", e => {
     logout();
 })
 
-facebookButton.addEventListener("click", e => {
-    loginWithFacebook();
-})
-
 onAuthStateChanged(auth, (user) => {
     if (user) {
         loginForm.classList.add("hidden");
         logoutButton.classList.add("visible");
     } else {
-        loginForm.classList.remove("hidden");
-        logoutButton.classList.remove("visible");
+        loginForm.classList.add("hidden");
+        logoutButton.classList.add("visible");
     }
 })
