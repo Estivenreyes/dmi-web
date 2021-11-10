@@ -1,4 +1,35 @@
-// Elementos que añadí a mi carrito
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js";
+import { getFirestore, collection, getDocs, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js";
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth();
+const db = getFirestore(app);
+
+let products = [];
+let userLogged = null;
+let cart = [];
+
+const getAllProducts = async() => {
+    const collectionRef = collection(db, "products");
+    const { docs } = await getDocs(collectionRef);
+
+    const firebaseProducts = docs.map((doc) => {
+        return {
+            ...doc.data(),
+            id: doc.id,
+        }
+    })
+
+    console.log(firebaseProducts);
+    // Recorro cada uno de los 4 productos que tengo en mi arreglo
+    firebaseProducts.forEach(product => {
+        // Llamo la funcion productTemplate para cada product.
+        productTemplate(product);
+    });
+
+    products = firebaseProducts;
+};
 
 const getMyCart = () => {
     const cart = localStorage.getItem("cart");
@@ -6,8 +37,18 @@ const getMyCart = () => {
     return cart ? JSON.parse(cart) : [];
 };
 
-const cart = getMyCart();
+const getFirebaseCart = async (userId) => {
+    const docRef = doc(db, "cart", userId);
+    const docSnap = await getDoc(docRef);
+    const data = docSnap.data();
+    return data;
+};
 
+const addProductsToCart = async (products) => {
+    await setDoc(doc(db, "cart", userLogged.uid), {
+        products
+    });
+};
 
 // Añadir cada producto a un elemento contenedor
 const productsSection = document.getElementById("products");
@@ -79,7 +120,13 @@ const productTemplate = (item) => {
 
         cart.push(productAdded);
 
+        if (userLogged) {
+            addProductsToCart(cart);
+        }
+
         localStorage.setItem("cart", JSON.stringify(cart));
+
+
         
         // Deshabilito el botón
         productCartButton.setAttribute("disabled", true);
@@ -139,12 +186,6 @@ orderBySelect.addEventListener("change", e => {
 });
 
 
-// Recorro cada uno de los 4 productos que tengo en mi arreglo
-products.forEach(product => {
-    // Llamo la funcion productTemplate para cada product.
-    productTemplate(product);
-});
-
 const user = {
     name: "Juan José",
     email: "jujogi413@gmail.com"
@@ -155,17 +196,14 @@ localStorage.setItem("user", JSON.stringify(user));
 //stringy para almacenar la info del objecto en localStorage
 // parse cuando recupero la información
 
+onAuthStateChanged(auth, async (user) => {
+    if (user) {
+        const result = await getFirebaseCart(user.uid);
+        cart = result.products;
+        userLogged = user;
+    } else {
+        cart = getMyCart();
+    }
 
-const userSaved = localStorage.getItem("user");
-const userJSON = JSON.parse(userSaved);
-
-console.log(userJSON);
-
-// if (user) {
-//     console.log(user);
-// } else {
-//     console.log("No existe!");
-// }
-
-
-
+    getAllProducts();
+});

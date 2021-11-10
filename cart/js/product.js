@@ -1,13 +1,34 @@
-// Obtenemos el parámetro id de la url
-const url = window.location.search;
-const searchParams = new URLSearchParams(url);
-const productId = searchParams.get("id");
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js";
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+const getProduct = async () => {
+    const url = window.location.search;
+    const searchParams = new URLSearchParams(url);
+    const productId = searchParams.get("id");
+
+    const docRef = doc(db, "products", productId);
+    const docSnap = await getDoc(docRef);
+    const data = docSnap.data();
+
+    productSection.classList.add("loaded");
+    spinner.classList.add("loaded");
+
+    loadProductInfo(data);
+
+}
+
+
 
 // Buscamos en el arreglo de nuestros productos, el id que haga match con el param "id"
 // de la barra de navegación
-const product = products.find(product => product.id == productId);
+// const product = products.find(product => product.id == productId);
 
 // Obtenemos estos elementos del DOM para modificarlos con la info del producto
+const productSection = document.getElementById("product");
+const spinner = document.getElementById("spinner");
 const productImage = document.getElementById("productImage");
 const productName = document.getElementById("productName");
 const productDescription = document.getElementById("productDescription");
@@ -15,11 +36,24 @@ const productPrice = document.getElementById("productPrice");
 const productGallery = document.getElementById("gallery");
 const customContent = document.getElementById("customContent");
 
+const loadProductInfo = (product) => {
+    productName.innerText = product.name;
+    productDescription.innerText = product.description;
+    productPrice.innerText = `${ formatCurrency(product.price) }`;
+    productImage.setAttribute("src", product.image);
+
+        // Solo si mi producto tiene imagenes,llamo la función createGallery
+    if (product.images) {
+        createGallery(product.images);
+    }
+
+    // Solo si mi producto tiene colors,llamo la función createSelectColors
+    if (product.colors) {
+        createSelectColors(product.colors);
+    }
+};
+
 // Modificamos la info del producto
-productName.innerText = product.name;
-productDescription.innerText = product.description;
-productPrice.innerText = `${ formatCurrency(product.price) }`;
-productImage.setAttribute("src", product.image);
 
 // Creamos la galería
 const createGallery = (images) => {
@@ -70,12 +104,4 @@ const createSelectColors = (colors) => {
 
 };
 
-// Solo si mi producto tiene imagenes,llamo la función createGallery
-if (product.images) {
-    createGallery(product.images);
-}
-
-// Solo si mi producto tiene colors,llamo la función createSelectColors
-if (product.colors) {
-    createSelectColors(product.colors);
-}
+getProduct();

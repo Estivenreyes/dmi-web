@@ -9,8 +9,7 @@
 </head>
 <body>
     
-
-    <div class="product__item">
+    <div class="product__item" id="product">
 
         <div class="product__image">
             <img src="" alt="" class="product__mainImage" id="productImage">
@@ -23,28 +22,25 @@
             <p class="product__paragraph" id="productDescription"></p> 
 
             <div id="customContent">
-
                 <!-- <label for="colors">Colores disponibles</label>
                 <select name="color" id="colors">
                     <option value="blue">Blue</option>
                     <option value="red">Red</option>
                     <option value="black">Negro</option>
                 </select> -->
-
             </div>
 
             <h3 class="product__price" id="productPrice"></h3>
 
             <button class="product__addToCart">Añadir al carrito</button>
-
-
         </div>
 
 
     </div>
 
+    <div class="loader" id="spinner"></div>
+
     <script src="./js/utils.js"></script>
-    <script src="./js/products.js"></script> <!-- Arreglo de productos -->
-    <script src="./js/product.js"></script>
+    <script type="module" src="./js/product.js"></script>
 </body>
 </html>

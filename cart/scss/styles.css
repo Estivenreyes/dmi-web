@@ -125,6 +125,10 @@ body {
 .product__item {
   width: 80%;
   margin: 0 auto;
+  display: none;
+}
+
+.product__item.loaded {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,5 +172,80 @@ body {
 .product__item #gallery div img {
   width: 100%;
   cursor: pointer;
+}
+
+.auth {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #b0b0b0;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.auth.hidden {
+  display: none;
+}
+
+.auth input {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  border: none;
+  padding: 15px;
+}
+
+.auth input[type=submit] {
+  background-color: #3483fa;
+  color: #FFF;
+}
+
+#logout {
+  display: none;
+}
+
+#logout.visible {
+  display: block;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  position: absolute;
+  top: 50%;
+  margin-left: 50%;
+}
+
+.loader.loaded {
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
