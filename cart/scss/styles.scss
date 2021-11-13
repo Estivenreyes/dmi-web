@@ -209,3 +209,18 @@ $blue: #3483fa;
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+
+#createProduct {
+    width: 80%;
+    margin: 0 auto;
+
+    input, textarea {
+        width: 100%;
+        border: none;
+        padding: 10px;
+        background-color: rgb(235, 235, 235);
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+}

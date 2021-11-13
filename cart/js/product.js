@@ -44,7 +44,7 @@ const loadProductInfo = (product) => {
 
         // Solo si mi producto tiene imagenes,llamo la función createGallery
     if (product.images) {
-        createGallery(product.images);
+        createGallery(product.image, product.images);
     }
 
     // Solo si mi producto tiene colors,llamo la función createSelectColors
@@ -56,12 +56,12 @@ const loadProductInfo = (product) => {
 // Modificamos la info del producto
 
 // Creamos la galería
-const createGallery = (images) => {
+const createGallery = (image, images) => {
     // Creamos un elemento div
     const gallery = document.createElement("div");
 
     // Guardamos el primer elemento en el elemento
-    gallery.innerHTML = `<img src="${product.image}">`;
+    gallery.innerHTML = `<img src="${image}">`;
     
     // Almacenamos las demás imágenes en el elemento
     images.forEach(image => {

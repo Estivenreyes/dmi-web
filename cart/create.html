@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="./scss/styles.css">
+</head>
+<body>
+    <form id="createProduct">
+        <h1>Añade un nuevo producto</h1>
+        <input type="text" name="name" placeholder="Nombre del producto">
+        <input type="number" name="price" placeholder="Precio del producto">
+
+        <textarea name="description" placeholder="Descripción del producto"></textarea>
+
+        <div class="images">
+            <div class="images__input">
+                <label for="name">Fotografía principal</label>
+                <input type="file" accept=".jpg,.png" name="image" id="mainImage">
+            </div>
+            <img src="" alt="" id="preview">
+        </div>
+
+        <label for="type">Categoría del producto</label>
+        <select name="type">
+            <option value="consoles">Consolas</option>
+            <option value="games">Juegos</option>
+            <option value="accesories">Accesorios</option>
+        </select>
+
+        <div class="images">
+            <label for="gallery">Galería</label>
+            <input type="file" accept=".jpg,.png" multiple name="gallery">
+        </div>
+
+        <input class="create__button" type="submit" value="Agregar producto" id="submitButton">
+        <p id="feedback"></p>
+    </form>
+    
+    <script src="./js/utils.js"></script>
+    <script type="module" src="./js/create-product.js"></script>
+</body>
+</html>

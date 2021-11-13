@@ -40,8 +40,9 @@ const getMyCart = () => {
 const getFirebaseCart = async (userId) => {
     const docRef = doc(db, "cart", userId);
     const docSnap = await getDoc(docRef);
-    const data = docSnap.data();
-    return data;
+    return docSnap.exists() ? docSnap.data() : {
+        products: []
+    }
 };
 
 const addProductsToCart = async (products) => {
@@ -84,11 +85,13 @@ const productTemplate = (item) => {
         buttonHtml = `<button class="product__cart" disabled>Producto añadido</button>`
     } else {
         buttonHtml = `<button class="product__cart">Añadir al carrito</button>`;
-    }
+    }  
+
+    const thumbnailImage = "https://user-images.githubusercontent.com/101482/29592647-40da86ca-875a-11e7-8bc3-941700b0a323.png";
 
     // Añadir el HTML a nuestro elemento product.
     product.innerHTML = `
-    <img src="${item.image}" alt="${item.name}" class="product__image">
+    <img src="${item.image !== '' ? item.image : thumbnailImage }" alt="${item.name}" class="product__image">
     <div class="product__description">
         ${tagHtml}
         <h3 class="product__price">${ formatCurrency(item.price) }</h3>
