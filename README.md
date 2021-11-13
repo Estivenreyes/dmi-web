@@ -49,5 +49,6 @@ A medida que vayamos viendo los temas, iremos actualizando el temario.
 - [🎥 Cart, LocalStorage & NumberFormat](https://youtu.be/C432UpPWM5Y) | [cart.js](https://github.com/jujogi/dmi-web/blob/master/cart/js/cart.js)
 - [🎥 Firebase Authentication](https://youtu.be/S_7lKQlMOVc) | [auth.js](https://github.com/jujogi/dmi-web/blob/master/cart/js/auth.js)
 - [🎥 Firebase Google Auth & Firestore](https://youtu.be/UiXtRII3l7k) | [Firestore.md](https://github.com/jujogi/dmi-web/blob/master/cart/firestore.md)
+- [🎥 Firebase Storage: Create Product](https://youtu.be/EE7mXzqZHYg) | [create.html](https://github.com/jujogi/dmi-web/blob/master/cart/create.html) | [create-product.js](https://github.com/jujogi/dmi-web/blob/master/cart/js/create-product.js)
 ## Grabaciones del curso
-- [🎥 Youtube Channel: DMI WEB (29)](https://www.youtube.com/watch?v=nK-fawfE8Ms&list=PLSXu7UPb1IEft3dCZCUyYBBznoQ_wVG0F&ab_channel=JuanJos%C3%A9Gonz%C3%A1lez)
+- [🎥 Youtube Channel: DMI WEB (30)](https://www.youtube.com/watch?v=nK-fawfE8Ms&list=PLSXu7UPb1IEft3dCZCUyYBBznoQ_wVG0F&ab_channel=JuanJos%C3%A9Gonz%C3%A1lez)
