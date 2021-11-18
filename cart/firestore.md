@@ -35,10 +35,20 @@ docs.forEach((doc) => {
 ## ➕ (POST/PUT) Add data
 - `doc`
 - `setDoc`
+
+
+Con un ID definido...
 ```
 import { doc, setDoc } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-firestore.js";
 await setDoc(doc(db, "NOMBRE_DE_LA_COLECCION", "IDENTIFICADOR_DEL_DOCUMENTO"), {
-    DATOS_A_GUARDAR
+    DATOS_A_GUARDAR (PROPIEDADES DE UN OBJETO)
+});
+```
+
+Con un ID generado por Firebase...
+```
+await addDoc(collection(db, "NOMBRE_DE_LA_COLECCION"), {
+    DATOS_A_GUARDAR (PROPIEDADES DE UN OBJETO)
 });
 ```
 
