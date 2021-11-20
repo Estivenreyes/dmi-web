@@ -8,12 +8,29 @@
     <link rel="stylesheet" href="./scss/styles.css">
 </head>
 <body>
-    <ul class="products" id="cart">
 
-    </ul>
-    <h3 class="total" id="total"></h3>
+    <div class="checkout__section">
+        <section>
+            <ul class="products" id="cart"></ul>
+            <h3 class="total" id="total"></h3>
+        </section>
+
+        <section>
+            <button id="autofill">Usar mismos datos del usuario</button>
+            <form id="checkout">
+                <input type="text" name="name" placeholder="Nombre completo">
+                <input type="text" name="city" placeholder="Cuidad">
+                <input type="text" name="address" placeholder="Dirección de residencia">
+                <select name="payment">
+                    <option value="contraentrega">Pago contra entrega</option>
+                    <option value="pse">PSE</option>
+                </select>
+                <input type="submit" value="Completar compra">
+            </form>
+        </section>
+    </div>
 
     <script src="./js/utils.js"></script>
-    <script src="./js/cart.js"></script>
+    <script type="module" src="./js/cart.js"></script>
 </body>
 </html>
